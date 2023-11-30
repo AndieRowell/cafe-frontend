@@ -1,3 +1,5 @@
+//! login page for authenticated user - if not anonymous should be able to redirect to registration
+
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 import { useGlobalState } from '../context/GlobalState';

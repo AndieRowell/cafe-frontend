@@ -1,3 +1,5 @@
+//! registration page/form for anonymous users to become authenticated users
+
 import React, { useEffect, useState,} from "react";
 import AuthService from "../services/auth.service";
 import { useRouter } from "next/navigation";
