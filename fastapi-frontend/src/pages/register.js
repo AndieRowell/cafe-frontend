@@ -1,8 +1,8 @@
 import React, { useEffect, useState,} from "react";
-import AuthService from "../../services/auth.service";
+import AuthService from "../services/auth.service";
 import { useRouter } from "next/navigation";
-import { useGlobalState } from "../../context/GlobalState";
-import styles from './register.module.css';
+import { useGlobalState } from "../context/GlobalState";
+import styles from '../styles/global.module.css';
 import { jwtDecode } from "jwt-decode";
 import Link from 'next/link';
 //------------------------------------------------------------------------------------------------------------------------------
@@ -27,7 +27,7 @@ function RegisterPage() {
     e.preventDefault();
     try {
       const resp = await AuthService.register(user);
-      
+
       if (resp.data.access_token) {
         //let data = jwtDecode(resp.access_token);
         let data = jwtDecode(resp.data.access_token, { header: true });
@@ -41,7 +41,7 @@ function RegisterPage() {
           console.log('Login failed');
           dispatch({ type: 'LOGOUT_USER' });
       }
-  
+
     } catch (error) {
       console.error('Registration failed:', error);
     }
@@ -53,7 +53,7 @@ function RegisterPage() {
         <h1>Register</h1>
       <div className="flex">
         <form className="mx-auto border-2 bg-mtgray" onSubmit={handleRegister}>
-          
+
           <div className="flex justify-between m-2 items-center space-x-2">
             <label htmlFor="email">Email:</label><br></br>
             <input

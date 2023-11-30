@@ -1,9 +1,9 @@
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
-import { useGlobalState } from '../../context/GlobalState';
-import AuthService from '../../services/auth.service';
+import { useGlobalState } from '../context/GlobalState';
+import AuthService from '../services/auth.service';
 import { jwtDecode } from "jwt-decode";
-import styles from './login.module.css';
+import styles from '../styles/global.module.css';
 import Link from 'next/link';
 //------------------------------------------------------------------------------------------------------------------------------
 function LoginPage() {
