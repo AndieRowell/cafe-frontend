@@ -15,6 +15,7 @@ import { jwtDecode } from "jwt-decode";
 import styles from "../styles/home.module.css";
 import Link from "next/link";
 import Head from "next/head";
+import Header from "@/components/header";
 
 export default function Home() {
   const { state, dispatch } = useGlobalState();
@@ -49,7 +50,10 @@ export default function Home() {
           {/* icon link here - favicon */}
         </Head>
         <h1 className="text-red-500 text-5xl">Cafe Finder</h1>
+        <Header />
       </div>
+
+
 
       <main className={`${styles.main}`}>
         <div className={styles.grid}>
