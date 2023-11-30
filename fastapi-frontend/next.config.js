@@ -4,3 +4,6 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+
+//add images configuration?
