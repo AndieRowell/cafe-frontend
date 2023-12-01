@@ -44,13 +44,16 @@ export default function Home() {
   //! here is where the original login nav link gets rendered? ...
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen py-2">
+      {/* <div className="flex flex-col items-center justify-center min-h-screen py-2"> */}
+      <div className="">
         <Head>
           <title>Cafe Finder App</title>
           {/* icon link here - favicon */}
         </Head>
-        <h1 className="text-red-500 text-5xl">Cafe Finder</h1>
+        {/* <h1 className="text-red-500 text-5xl">Cafe Finder</h1> */}
         <Header />
+        {/* Hero */}
+        {/* section for */}
       </div>
 
 
