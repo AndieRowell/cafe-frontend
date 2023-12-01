@@ -7,9 +7,13 @@ import {
   Bars3Icon,
   UsersIcon,
 } from "@heroicons/react/24/solid";
+import { useGlobalState } from "@/context/GlobalState";
+import Link from "next/link";
 
 function Header() {
-  return (
+    const { state, dispatch } = useGlobalState();
+
+    return (
     <header className="sticky top=0 z-50 grid grid-cols-3 bg-white shadow-md py-5 px-5">
       {/* left div */}
       <div className="relative flex items-center h-10 cursor-pointer my-auto">
@@ -35,7 +39,14 @@ function Header() {
 
       {/* right div */}
       <div className="flex items-center space-x-4 text-gray-500 justify-end ">
-        <p className="hidden md:inline cursor-pointer">Sign Up</p>
+        {/* <p className="hidden md:inline cursor-pointer">Sign In</p> */}
+          {state.user ? (
+              <Link href="/" className={styles.logout} onClick={handleLogout}>
+                Logout
+              </Link>
+          ) : (
+              <Link href="/login" className="hidden md:inline cursor-pointer">Sign In</Link>
+          )}
         <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
           <Bars3Icon className="h-6" />
           <UserCircleIcon className="h-6" />

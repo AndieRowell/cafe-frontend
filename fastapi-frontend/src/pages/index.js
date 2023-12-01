@@ -1,9 +1,5 @@
 //! main index page - landing page
 
-// TODO:
-// add hero
-// navbar
-// FIXME: i can add 'FIX me' situations here
 
 "use client"; //? i think we need this here?
 
@@ -12,7 +8,7 @@ import { useGlobalState } from "../context/GlobalState";
 import { useRouter } from "next/navigation";
 import authService from "../services/auth.service";
 import { jwtDecode } from "jwt-decode";
-import styles from "../styles/home.module.css";
+//import styles from "../styles/home.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import Header from "@/components/header";
@@ -58,9 +54,11 @@ export default function Home() {
       </div>
 
 
+{/* main - className={`${styles.main}`} */}
+{/* className={styles.grid} */}
 
-      <main className={`${styles.main}`}>
-        <div className={styles.grid}>
+      <main >
+        {/* <div >
           {state.user ? (
             <li className="nav-item">
               <Link href="/" className={styles.logout} onClick={handleLogout}>
@@ -72,7 +70,7 @@ export default function Home() {
               <Link href="/login">Login</Link>
             </li>
           )}
-        </div>
+        </div> */}
       </main>
     </>
   );
