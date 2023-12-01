@@ -16,6 +16,7 @@ import styles from "../styles/home.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import Header from "@/components/header";
+import Hero from "@/components/hero"
 
 export default function Home() {
   const { state, dispatch } = useGlobalState();
@@ -52,7 +53,7 @@ export default function Home() {
         </Head>
         {/* <h1 className="text-red-500 text-5xl">Cafe Finder</h1> */}
         <Header />
-        {/* Hero */}
+        <Hero />
         {/* section for */}
       </div>
 
