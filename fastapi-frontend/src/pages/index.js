@@ -1,6 +1,5 @@
 //! main index page - landing page
 
-
 "use client"; //? i think we need this here?
 
 import React, { useState, useEffect } from "react";
