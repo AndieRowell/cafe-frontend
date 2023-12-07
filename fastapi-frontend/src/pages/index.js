@@ -95,7 +95,7 @@ export default function Home({ exploreData }) {
 // for the dummy data api
 export async function getStaticProps() {
   const res = await fetch(
-    "https://api.mockaroo.com/api/93402ac0?count=7&key=d1803750"
+    "https://api.mockaroo.com/api/93402ac0?count=8&key=d1803750"
   );
   const exploreData = await res.json();
   // const exploreData = await fetch("https://www.mockaroo.com/93402ac0");
