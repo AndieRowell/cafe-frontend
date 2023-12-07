@@ -7,7 +7,7 @@ const client = axios.create({
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded'
   }
-});
+}); 
 
 client.interceptors.response.use(
   response => response,
