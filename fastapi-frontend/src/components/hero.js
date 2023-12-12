@@ -9,7 +9,12 @@ function Hero() {
         layout="fill"
         objectFit="cover"
       />
-      <h1>hero test</h1>
+      <div className="absolute top-1/2 w-full text-center">
+        <p className="text-sm sm:text-lg">Don't know what to get?</p>
+        <button className="text-green-500 bg-white px-10 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150 ">
+          Try Me!
+        </button>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,363 @@
+
+[
+    {
+        "id": 1,
+        "name": "Cup & Co.",
+        "address": "22 Burning Wood Alley",
+        "city": "Louisville",
+        "state": "KY",
+        "postal_code": "40250",
+        "latitude": 38.189,
+        "longitude": -85.6768,
+        "rating": 3.5,
+        "img": "http://dummyimage.com/232x100.png/cc0000/ffffff",
+        "tags": [
+          {
+            "coffee": true,
+            "tea": true,
+            "matcha": false,
+            "cozy": false,
+            "modern": true,
+            "good_wifi": true,
+            "parking_lot": true,
+            "wheelchair_accessible": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Bean Town Cafe",
+        "address": "5126 Ridgeview Pass",
+        "city": "Lexington",
+        "state": "KY",
+        "postal_code": "40596",
+        "latitude": 38.0283,
+        "longitude": -84.4715,
+        "rating": 3.6,
+        "img": "http://dummyimage.com/216x100.png/cc0000/ffffff",
+        "tags": [
+          {
+            "coffee": true,
+            "tea": true,
+            "matcha": true,
+            "cozy": true,
+            "modern": false,
+            "good_wifi": false,
+            "parking_lot": false,
+            "wheelchair_accessible": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "The Roastery",
+        "address": "7180 Village Green Court",
+        "city": "Lexington",
+        "state": "KY",
+        "postal_code": "40596",
+        "latitude": 38.0283,
+        "longitude": -84.4715,
+        "rating": 0.3,
+        "img": "http://dummyimage.com/166x100.png/5fa2dd/ffffff",
+        "tags": [
+          {
+            "coffee": true,
+            "tea": true,
+            "matcha": false,
+            "cozy": false,
+            "modern": true,
+            "good_wifi": true,
+            "parking_lot": false,
+            "wheelchair_accessible": true
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Mocha Madness",
+        "address": "57 Harbort Junction",
+        "city": "Lexington",
+        "state": "KY",
+        "postal_code": "40515",
+        "latitude": 37.9651,
+        "longitude": -84.4708,
+        "rating": 4.8,
+        "img": "http://dummyimage.com/140x100.png/ff4444/ffffff",
+        "tags": [
+          {
+            "coffee": true,
+            "tea": false,
+            "matcha": false,
+            "cozy": false,
+            "modern": true,
+            "good_wifi": true,
+            "parking_lot": false,
+            "wheelchair_accessible": true
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Mocha Madness",
+        "address": "41048 Eggendart Terrace",
+        "city": "Lexington",
+        "state": "KY",
+        "postal_code": "40581",
+        "latitude": 38.0283,
+        "longitude": -84.4715,
+        "rating": 3.7,
+        "img": "http://dummyimage.com/234x100.png/dddddd/000000",
+        "tags": [
+          {
+            "coffee": true,
+            "tea": false,
+            "matcha": false,
+            "cozy": true,
+            "modern": true,
+            "good_wifi": false,
+            "parking_lot": false,
+            "wheelchair_accessible": true
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Mocha Madness",
+        "address": "543 Mayer Center",
+        "city": "Lexington",
+        "state": "KY",
+        "postal_code": "40546",
+        "latitude": 38.0283,
+        "longitude": -84.4715,
+        "rating": 3.3,
+        "img": "http://dummyimage.com/129x100.png/dddddd/000000",
+        "tags": [
+          {
+            "coffee": true,
+            "tea": true,
+            "matcha": true,
+            "cozy": true,
+            "modern": false,
+            "good_wifi": false,
+            "parking_lot": false,
+            "wheelchair_accessible": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Bean Town Cafe",
+        "address": "579 Oxford Crossing",
+        "city": "Louisville",
+        "state": "KY",
+        "postal_code": "40225",
+        "latitude": 38.189,
+        "longitude": -85.6768,
+        "rating": 2.1,
+        "img": "http://dummyimage.com/180x100.png/dddddd/000000",
+        "tags": [
+          {
+            "coffee": true,
+            "tea": true,
+            "matcha": false,
+            "cozy": false,
+            "modern": true,
+            "good_wifi": false,
+            "parking_lot": true,
+            "wheelchair_accessible": true
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Espresso Junction",
+        "address": "418 Little Fleur Hill",
+        "city": "Lexington",
+        "state": "KY",
+        "postal_code": "40596",
+        "latitude": 38.0283,
+        "longitude": -84.4715,
+        "rating": 0.6,
+        "img": "http://dummyimage.com/200x100.png/5fa2dd/ffffff",
+        "tags": [
+          {
+            "coffee": true,
+            "tea": true,
+            "matcha": false,
+            "cozy": false,
+            "modern": true,
+            "good_wifi": true,
+            "parking_lot": false,
+            "wheelchair_accessible": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Mocha Madness",
+        "address": "70091 5th Drive",
+        "city": "Lexington",
+        "state": "KY",
+        "postal_code": "40581",
+        "latitude": 38.0283,
+        "longitude": -84.4715,
+        "rating": 0.3,
+        "img": "http://dummyimage.com/236x100.png/ff4444/ffffff",
+        "tags": [
+          {
+            "coffee": false,
+            "tea": true,
+            "matcha": true,
+            "cozy": false,
+            "modern": false,
+            "good_wifi": true,
+            "parking_lot": true,
+            "wheelchair_accessible": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Caffeine Corner",
+        "address": "709 Melvin Crossing",
+        "city": "Frankfort",
+        "state": "KY",
+        "postal_code": "40618",
+        "latitude": 38.2341,
+        "longitude": -84.8748,
+        "rating": 4.3,
+        "img": "http://dummyimage.com/236x100.png/ff4444/ffffff",
+        "tags": [
+          {
+            "coffee": true,
+            "tea": true,
+            "matcha": false,
+            "cozy": false,
+            "modern": true,
+            "good_wifi": false,
+            "parking_lot": true,
+            "wheelchair_accessible": false
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Caffeine Corner",
+        "address": "8076 Glendale Road",
+        "city": "Lexington",
+        "state": "KY",
+        "postal_code": "40505",
+        "latitude": 38.0612,
+        "longitude": -84.4583,
+        "rating": 3.5,
+        "img": "http://dummyimage.com/199x100.png/5fa2dd/ffffff",
+        "tags": [
+          {
+            "coffee": true,
+            "tea": false,
+            "matcha": true,
+            "cozy": true,
+            "modern": false,
+            "good_wifi": true,
+            "parking_lot": true,
+            "wheelchair_accessible": true
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Perk Palace",
+        "address": "2268 Ronald Regan Parkway",
+        "city": "Lexington",
+        "state": "KY",
+        "postal_code": "40586",
+        "latitude": 38.0283,
+        "longitude": -84.4715,
+        "rating": 3.3,
+        "img": "http://dummyimage.com/189x100.png/5fa2dd/ffffff",
+        "tags": [
+          {
+            "coffee": true,
+            "tea": true,
+            "matcha": true,
+            "cozy": false,
+            "modern": true,
+            "good_wifi": false,
+            "parking_lot": false,
+            "wheelchair_accessible": true
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Bean Town Cafe",
+        "address": "42746 Brown Junction",
+        "city": "Lexington",
+        "state": "KY",
+        "postal_code": "40505",
+        "latitude": 38.0612,
+        "longitude": -84.4583,
+        "rating": 4,
+        "img": "http://dummyimage.com/238x100.png/cc0000/ffffff",
+        "tags": [
+          {
+            "coffee": true,
+            "tea": true,
+            "matcha": true,
+            "cozy": false,
+            "modern": true,
+            "good_wifi": false,
+            "parking_lot": false,
+            "wheelchair_accessible": true
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "The Brew Spot",
+        "address": "0 Onsgard Place",
+        "city": "London",
+        "state": "KY",
+        "postal_code": "40745",
+        "latitude": 37.1376,
+        "longitude": -84.1156,
+        "rating": 3.4,
+        "img": "http://dummyimage.com/184x100.png/dddddd/000000",
+        "tags": [
+          {
+            "coffee": true,
+            "tea": false,
+            "matcha": false,
+            "cozy": true,
+            "modern": false,
+            "good_wifi": false,
+            "parking_lot": false,
+            "wheelchair_accessible": true
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Caffeine Corner",
+        "address": "2 Pine View Pass",
+        "city": "Lexington",
+        "state": "KY",
+        "postal_code": "40510",
+        "latitude": 38.0702,
+        "longitude": -84.591,
+        "rating": 3.7,
+        "img": "http://dummyimage.com/244x100.png/5fa2dd/ffffff",
+        "tags": [
+          {
+            "coffee": true,
+            "tea": true,
+            "matcha": false,
+            "cozy": false,
+            "modern": true,
+            "good_wifi": false,
+            "parking_lot": false,
+            "wheelchair_accessible": true
+          }
+        ]
+      }
+]

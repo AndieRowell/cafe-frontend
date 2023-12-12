@@ -13,8 +13,17 @@ import Head from "next/head";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import MiniCard from "@/components/minicard";
+import MediumCard from "@/components/mediumcard";
+import PromotionCard from "@/components/promotioncard";
+import Footer from "@/components/footer";
 
-export default function Home({ exploreData }) {
+// import { exploreData } from "../../data/cafes";
+// import { drinksData } from "../../data/drinks";
+
+//!change to this code when have medium card data ready
+
+export default function Home({ exploreData, drinksData }) {
+  // export default function Home({ exploreData }) {
   const { state, dispatch } = useGlobalState();
 
   useEffect(() => {
@@ -58,22 +67,37 @@ export default function Home({ exploreData }) {
 
             {/* pull in data fom dummy data api - api endpoints */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {exploreData?.map(({ id, img, name, city }) => (
-                <MiniCard key={id} img={img} name={name} city={city} />
+              {exploreData?.map(({ id, name, img, city }) => (
+                <MiniCard key={id} name={name} img={img} city={city} />
               ))}
             </div>
           </section>
-
           <section>
-            <h2 className="text-4xl font-semi">Treat Yourself!</h2>
+            <h2 className="text-4xl font-semibold py-8">Treat Yourself!</h2>
+            {/* //! where the medium cards will go //! data passed here */}
+
+            <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3">
+              {drinksData?.map(({ id, img, name }) => (
+                <MediumCard key={id} img={img} name={name} />
+              ))}
+            </div>
           </section>
+          {/* //!need to add promotion card URL!!! */}
+          <PromotionCard
+            // img="url"
+            title="Try Out Lexington Coffee Week!"
+            description="A week of community and coffee lovers"
+            buttonText="Let's see!"
+          />
         </main>
+
+        <Footer />
       </div>
 
-      {/* main - className={`${styles.main}`} */}
-      {/* className={styles.grid} */}
+      {/*
 
-      {/* <main >
+      //! this is where the logout/login link was previously - bp code
+      <main >
         <div >
           {state.user ? (
             <li className="nav-item">
@@ -92,19 +116,47 @@ export default function Home({ exploreData }) {
   );
 }
 
-// for the dummy data api
+// //! for the dummy data
+// export async function getStaticProps() {
+//   //! dummy data for businessses
+//   // const res = await fetch(
+//   //   "https://api.mockaroo.com/api/93402ac0?count=8&key=d1803750"
+//   //   //! NOTE: change the "count=8" to number of items wanted to use in api
+//   // );
+
+//   const res = await fetch(
+//     "/cafe-frontend/fastapi-frontend/data/cafes.json"
+//     );
+
+//     const exploreData = await res.json();
+
+//   // const exploreData = await fetch("https://www.mockaroo.com/93402ac0");
+//   // then((res) => res.json());
+
+//   return {
+//     props: {
+//       exploreData,
+//       // exploreData: exploreData,
+//     },
+//   };
+// }
+
+//! REPLACE WHEN dummy data set for drinks cards!
 export async function getStaticProps() {
-  const res = await fetch(
-    "https://api.mockaroo.com/api/93402ac0?count=8&key=d1803750"
-  );
-  const exploreData = await res.json();
-  // const exploreData = await fetch("https://www.mockaroo.com/93402ac0");
-  // then((res) => res.json());
+  //! businesses data
+  const exploreData = await fetch(
+    "https://api.mockaroo.com/api/93402ac0?count=15&key=d1803750"
+  ).then((res) => res.json());
+
+  //! drinks data
+  const drinksData = await fetch(
+    "https://api.mockaroo.com/api/9f193740?count=25&key=d1803750"
+  ).then((res) => res.json());
 
   return {
     props: {
       exploreData,
-      // exploreData: exploreData,
+      drinksData,
     },
   };
 }
