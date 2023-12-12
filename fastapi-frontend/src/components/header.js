@@ -47,11 +47,12 @@ function Header({placeholder}) {
     return (
     <header className="sticky top=0 z-50 grid grid-cols-3 bg-white shadow-md py-5 px-5">
       {/* left div */}
-      <div onClick={() => router.push('/') } className="relative flex items-center h-10 cursor-pointer my-auto">
+      <div onClick={() => router.push('/') } className="relative flex items-center h-20 cursor-pointer my-auto">
         {/* <h1>this is a header test</h1> */}
         {/* <Link href="/"> */}
         <Image
-          src="/assets/tempteacuplogo.svg"
+          // src="/assets/tempteacuplogo.svg"
+          src="/assets/beanslogo-removebg.png"
           alt="temp logo"
           layout="fill"
           objectFit="contain"
@@ -70,7 +71,7 @@ function Header({placeholder}) {
           type="text"
           placeholder={placeholder || "Where to next?"}
         />
-        <MagnifyingGlassIcon className="hidden md:inline-flex h-8 bg-green-400 text-white rounded-full stroke-2 p-2 cursor-pointer md:mx-2" />
+        <MagnifyingGlassIcon className="hidden md:inline-flex h-8 bg-yellow-800 text-white rounded-full stroke-2 p-2 cursor-pointer md:mx-2" />
       </div>
 
 
@@ -99,7 +100,7 @@ function Header({placeholder}) {
           <button onClick={resetInput} className="flex-grow text-gray-500">
             Cancel
           </button>
-          <button onClick={search} className="flex-grow text-green-500">
+          <button onClick={search} className="flex-grow text-yellow-800">
             Search
           </button>
           </div>

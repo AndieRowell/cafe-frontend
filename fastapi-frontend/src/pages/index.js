@@ -16,6 +16,8 @@ import MiniCard from "@/components/minicard";
 import MediumCard from "@/components/mediumcard";
 import PromotionCard from "@/components/promotioncard";
 import Footer from "@/components/footer";
+import { drinksData } from "../../data/drinks";
+import SplitHero from "@/components/splithero";
 
 // import { exploreData } from "../../data/cafes";
 // import { drinksData } from "../../data/drinks";
@@ -25,6 +27,7 @@ import Footer from "@/components/footer";
 export default function Home({ exploreData, drinksData }) {
   // export default function Home({ exploreData }) {
   const { state, dispatch } = useGlobalState();
+  const { data, setData } = useState([]);
 
   useEffect(() => {
     const getUserFromLocalStorage = () => {
@@ -47,6 +50,26 @@ export default function Home({ exploreData, drinksData }) {
     router.push("/");
   };
 
+  //!testing json local
+  const getData = () => {
+    fetch("data.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then(function (response) {
+        console.log(response);
+        return response.json();
+      })
+      .then(function (myJson) {
+        console.log(myJson);
+      });
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+
   //! here is where the original login nav link gets rendered? ...
   return (
     <>
@@ -59,7 +82,7 @@ export default function Home({ exploreData, drinksData }) {
         {/* <h1 className="text-red-500 text-5xl">Cafe Finder</h1> */}
         <Header />
         <Hero />
-
+        {/* <SplitHero /> */}
         {/* section for */}
         <main className="max-w-7xl mx-auto px-8 sm:px-16">
           <section className="pt-6">
@@ -82,6 +105,11 @@ export default function Home({ exploreData, drinksData }) {
               ))}
             </div>
           </section>
+          <section>
+            {/*//! test section */}
+            {data && data.length > 0 && data.map((item) => <p>{item.name}</p>)}
+          </section>
+
           {/* //!need to add promotion card URL!!! */}
           <PromotionCard
             // img="url"

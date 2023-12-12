@@ -1,9 +1,15 @@
+import React from "react";
+import TestImg1 from "../public/assets/drinks/IMG_8291.jpg";
+
+
+export const drinksData =
 [
   {
     id: 1,
     name: "Flat White",
     cafe_id: 11,
-    img: "http://dummyimage.com/199x100.png/ff4444/ffffff",
+    // img: "http://dummyimage.com/199x100.png/ff4444/ffffff",
+    img: TestImg1,
     description:
       "amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non",
     price: "$4.90",

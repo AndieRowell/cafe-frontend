@@ -20,9 +20,9 @@ function SearchResult({ searchResults }) {
       <main className="flex">
         <section className="flex-grow pt-14 px-6">
           <p className="text-xs">
-            this will be the search input the user entered
+            Let's see what's in our area!
           </p>
-          <h1 className="text-3xl font-semibold mt-2 mb-6">Cafe's in {city}</h1>
+          <h1 className="text-3xl font-semibold mt-2 mb-6">Cafes in {city}</h1>
 
           <div className="hidden lg:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap">
             {/* //! filters! and TAGS! */}
@@ -52,7 +52,7 @@ function SearchResult({ searchResults }) {
           </div>
         </section>
         {/* //! MAP FROM MAPBOX */}
-        <section className="hidden xl:inline-flex xl:min-w-[600px]">
+        <section className="hidden xl:inline-flex xl:min-w-[800px]">
           <MapBox searchResults={searchResults}/>
         </section>
       </main>
