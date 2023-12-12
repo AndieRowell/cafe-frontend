@@ -52,8 +52,8 @@ function SearchResult({ searchResults }) {
           </div>
         </section>
         {/* //! MAP FROM MAPBOX */}
-        <section>
-          <MapBox className="hidden xl:inline-flex xl:min-w-[600px]" />
+        <section className="hidden xl:inline-flex xl:min-w-[600px]">
+          <MapBox searchResults={searchResults}/>
         </section>
       </main>
 
