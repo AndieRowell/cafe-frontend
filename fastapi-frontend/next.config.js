@@ -2,7 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["dummyimage.com"],
+    domains: ["i.postimg.cc", "*.postimg.cc", "dummyimage.com"],
+    // ["dummyimage.com", "www.pexels.com","https://www.pexels.com"]
+    // remotePatterns: ["www.pexels.com", "dummyimage.com"],
   },
   env: {
     mapbox_key:

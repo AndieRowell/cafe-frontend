@@ -85,8 +85,8 @@ export default function Home({ exploreData, drinksData }) {
         {/* <SplitHero /> */}
         {/* section for */}
         <main className="max-w-7xl mx-auto px-8 sm:px-16">
-          <section className="pt-6">
-            <h2 className="text-4xl font-semibold pb-5">Where to Next?!</h2>
+          <section className="pt-10">
+            <h2 className="text-4xl font-semibold pb-2">In Your Area</h2>
 
             {/* pull in data fom dummy data api - api endpoints */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -96,7 +96,9 @@ export default function Home({ exploreData, drinksData }) {
             </div>
           </section>
           <section>
-            <h2 className="text-4xl font-semibold py-8">Treat Yourself!</h2>
+            <h2 className="text-4xl font-semibold pt-10 pb-8">
+              Treat Yourself!
+            </h2>
             {/* //! where the medium cards will go //! data passed here */}
 
             <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3">
@@ -105,10 +107,9 @@ export default function Home({ exploreData, drinksData }) {
               ))}
             </div>
           </section>
-          <section>
-            {/*//! test section */}
-            {data && data.length > 0 && data.map((item) => <p>{item.name}</p>)}
-          </section>
+          {/* <section>
+            {/* {data && data.length > 0 && data.map((item) => <p>{item.name}</p>)}
+          </section> */}
 
           {/* //!need to add promotion card URL!!! */}
           <PromotionCard

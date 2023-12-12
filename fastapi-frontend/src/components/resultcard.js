@@ -15,6 +15,7 @@ function ResultCard({ id, img, city, name, rating, description, tags }) {
         {/* //image size inside is relative to the container that is wrapped around it */}
         <Image
           src={img}
+          alt="coffee"
           layout="fill"
           objectFit="cover"
           className="rounded-2xl"

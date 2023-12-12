@@ -59,7 +59,7 @@ function LoginPage() {
             <div onClick={() => router.push('/') }>
             <Image
               className="mx-auto"
-              src="/assets/tempteacuplogo.svg"
+              src="/assets/beanslogo-removebg.png"
               alt="temp app logo"
               width={50}
               height={50}
@@ -92,7 +92,7 @@ function LoginPage() {
                   type="email"
                   autoComplete="email"
                   required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-insert focus:ring-green-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-insert focus:ring-yellow-800 sm:text-sm sm:leading-6"
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
@@ -108,7 +108,7 @@ function LoginPage() {
                 <div className="text-sm">
                   <a
                     href="#"
-                    className="font-semibold text-green-600 hover:text-green-500"
+                    className="font-semibold text-yellow-800 hover:text-yellow-800"
                   >
                     Forgot password?
                   </a>
@@ -123,7 +123,7 @@ function LoginPage() {
                   minLength="8"
                   required
                   onChange={(e) => setPassword(e.target.value)}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-insert ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-insert ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-800 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -132,7 +132,7 @@ function LoginPage() {
               <input
                 type="submit"
                 value="Sign in"
-                className="flex w-full justify-center rounded-md bg-green-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+                className="flex w-full justify-center rounded-md bg-yellow-800 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-yellow-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-800"
               />
             </div>
           </form>
@@ -140,7 +140,7 @@ function LoginPage() {
             Don't have an account?{" "}
             <Link
               href="/register"
-              className="font-semibold leading-6 text-green-600 hover:text-green-500"
+              className="font-semibold leading-6 text-yellow-800 hover:text-yellow-800"
             >
               Sign up here
             </Link>

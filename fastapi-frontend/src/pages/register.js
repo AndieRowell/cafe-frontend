@@ -60,7 +60,7 @@ function RegisterPage() {
           <div onClick={() => router.push('/') }>
             <Image
               className="mx-auto"
-              src="/assets/tempteacuplogo.svg"
+              src="/assets/beanslogo-removebg.png"
               alt="temp app logo"
               width={50}
               height={50}
@@ -83,7 +83,7 @@ function RegisterPage() {
               </label>
               <div className="mt-2">
                 <input
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-insert focus:ring-green-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-insert focus:ring-yellow-800 sm:text-sm sm:leading-6"
                   type="email"
                   id="email"
                   required
@@ -107,7 +107,7 @@ function RegisterPage() {
               </div>
               <div className="mt-2">
                 <input
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-insert ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-insert ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-800 sm:text-sm sm:leading-6"
                   type="password"
                   id="password"
                   name="password"
@@ -125,7 +125,7 @@ function RegisterPage() {
               </label>
               <div className="mt-2">
                 <input
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-insert focus:ring-green-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-insert focus:ring-yellow-800 sm:text-sm sm:leading-6"
                   type="password"
                   id="passwordConf"
                   required
@@ -137,7 +137,7 @@ function RegisterPage() {
               <input
                 type="submit"
                 value="Register!"
-                className="flex w-full justify-center rounded-md bg-green-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+                className="flex w-full justify-center rounded-md bg-yellow-800 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-yellow-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-800"
                 disabled={
                   user.password &&
                   user.password.length >= 8 &&
@@ -153,7 +153,7 @@ function RegisterPage() {
             Already have an account?{" "}
             <Link
               href="/login"
-              className="font-semibold leading-6 text-green-600 hover:text-green-500"
+              className="font-semibold leading-6 text-yellow-800 hover:text-yellow-800"
             >
               Sign in here
             </Link>
