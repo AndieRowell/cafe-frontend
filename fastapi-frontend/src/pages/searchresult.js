@@ -19,9 +19,7 @@ function SearchResult({ searchResults }) {
       {/* //string interpolation to put in user values - "|"" to separate */}
       <main className="flex">
         <section className="flex-grow pt-14 px-6">
-          <p className="text-xs">
-            Let's see what's in our area!
-          </p>
+          <p className="text-xs">Let&apos;s see whats in our area!</p>
           <h1 className="text-3xl font-semibold mt-2 mb-6">Cafes in {city}</h1>
 
           <div className="hidden lg:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap">
@@ -53,7 +51,7 @@ function SearchResult({ searchResults }) {
         </section>
         {/* //! MAP FROM MAPBOX */}
         <section className="hidden xl:inline-flex xl:min-w-[800px]">
-          <MapBox searchResults={searchResults}/>
+          <MapBox searchResults={searchResults} />
         </section>
       </main>
 

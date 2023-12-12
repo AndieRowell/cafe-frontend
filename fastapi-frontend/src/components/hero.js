@@ -17,12 +17,13 @@ function Hero() {
         objectFit="cover"
       />
       <div className="absolute left-1/4 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-left">
-        <h1 className="text-left text-4xl sm:text-5xl text-white font-bold mb-4">Don't know what to get?</h1>
+        <h1 className="text-left text-4xl sm:text-5xl text-white font-bold mb-4">
+          Don&apos;t know what to get?
+        </h1>
         <button className="text-yellow-800 bg-white px-10 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150 ">
           Try Me!
         </button>
       </div>
-
 
       {/* <div className="absolute top-1/2 w-full text-center">
         <p className="text-sm sm:text-lg">Don't know what to get?</p>

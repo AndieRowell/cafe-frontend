@@ -13,7 +13,7 @@ function SplitHero() {
             </h1>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               Need a place to study? Want to try a new drink? Or just want to
-              explore your community? You've come to the right place.
+              explore your community? You&apos;ve come to the right place.
             </p>
             <Link
               href="/"

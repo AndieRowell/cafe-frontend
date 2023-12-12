@@ -56,7 +56,7 @@ function LoginPage() {
         {/* <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8"> */}
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           {/* <Link href="/"> */}
-            <div onClick={() => router.push('/') }>
+          <div onClick={() => router.push("/")}>
             <Image
               className="mx-auto"
               src="/assets/beanslogo-removebg.png"
@@ -64,8 +64,8 @@ function LoginPage() {
               width={50}
               height={50}
             />
-            </div>
-            {/* <img
+          </div>
+          {/* <img
             className="mx-auto h-10 w-auto"
             src="/assets/tempteacuplogo.svg"
             alt="temp app logo"
@@ -137,7 +137,7 @@ function LoginPage() {
             </div>
           </form>
           <p className="mt-10 text-center text-sm text-gray-500">
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <Link
               href="/register"
               className="font-semibold leading-6 text-yellow-800 hover:text-yellow-800"
