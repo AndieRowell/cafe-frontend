@@ -174,7 +174,7 @@ export default function Home({ exploreData, drinksData }) {
 export async function getStaticProps() {
   //! businesses data
   const exploreData = await fetch(
-    "https://api.mockaroo.com/api/93402ac0?count=15&key=d1803750"
+    "https://api.mockaroo.com/api/93402ac0?count=16&key=d1803750"
   ).then((res) => res.json());
 
   //! drinks data
